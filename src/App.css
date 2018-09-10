@@ -1,0 +1,83 @@
+
+
+.App {
+    background-image: url('./images/escheresque_ste_@2X.png');
+    background-repeat:repeat;
+    background-size:auto;
+    background-position: center;
+    min-height: 100vh;
+    height: 100%;
+    padding-top: 2%;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-top: 50px;
+}
+
+table td{
+    color: white;
+    font-size: 35px;
+}
+
+table th{
+    color: white;
+    font-size: 35px;
+}
+
+.dark-table td{
+    color: black !important;
+}
+
+.dark-table th{
+    color: black !important;
+}
+
+.login-card{
+    text-align: center;
+    background-color: whitesmoke;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+    max-width: 320px;
+    padding: 25px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.error-text{
+    color: red;
+}
+
+.team-button{
+    width: 150px;
+    height: 75px;
+    font-size: 35px;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@media screen and (max-width: 640px) {
+    table td{
+        color: white;
+        font-size: 16px;
+    }
+
+    table th{
+        color: white;
+        font-size: 16px;
+    }
+    
+    h3 {
+        font-size: 22px;
+    }
+    
+    h4 {
+        font-size: 16px;
+    }
+}
