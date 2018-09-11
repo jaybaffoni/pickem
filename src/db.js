@@ -1,3 +1,3 @@
 export const DB_INFO = {
-    address: 'https://a5134475.ngrok.io'
+    address: 'https://8d2eec0e.ngrok.io'
 }
