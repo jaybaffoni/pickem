@@ -1,3 +1,3 @@
 export const DB_INFO = {
-    address: 'https://strange-elephant-71.localtunnel.me'
+    address: 'https://8d68a736.ngrok.io'
 }
