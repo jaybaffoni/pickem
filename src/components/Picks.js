@@ -28,10 +28,10 @@ export default class Picks extends Component {
     tabRow(){
         console.log('loading picks to row');
         var count = Object.keys(this.state.games).length;
-        return Object.keys(this.state.games).map((key, i) => {
-            var object = this.state.games[key];
+        return this.state.games.map((object, i) => {
+            //var object = this.state.games[key];
             return(
-                    <PickRow key={i} obj={object} k={key} />
+                    <PickRow key={i} obj={object} k={object.game_id} />
                 )
             
         })
@@ -39,8 +39,7 @@ export default class Picks extends Component {
     
     render(){
         return (
-            <div>
-                <p>This Week's Matchups:</p>
+            <div className="row">
                 {this.tabRow()}
             </div>
         )

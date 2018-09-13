@@ -37,11 +37,11 @@ class PickRow extends Component {
     }
     
     pickHome(){
-        this.makePick(this.state.obj.home.abbr);
+        this.makePick(this.state.obj.home);
     }
     
     pickAway(){
-        this.makePick(this.state.obj.away.abbr);
+        this.makePick(this.state.obj.visitor);
     }
     
     makePick(team){
@@ -74,13 +74,14 @@ class PickRow extends Component {
     }
     
     render() {
-        var object = this.state.obj;
+        var obj = this.state.obj;
+        var visitor = obj.vnn.charAt(0).toUpperCase() + obj.vnn.substr(1);
+        var home = obj.hnn.charAt(0).toUpperCase() + obj.hnn.substr(1);
         return (
-            <div>
-                <Button color={this.getColor(object.away.abbr)} className="team-button" style={{display: 'inline'}} onClick={this.pickAway}>{object.away.abbr}</Button>
-                <h1 className="white-text" style={{display: 'inline'}}>@</h1>
-                <Button color={this.getColor(object.home.abbr)} className="team-button" style={{display: 'inline'}} onClick={this.pickHome}>{object.home.abbr}</Button>
-
+            <div className="login-card col-md-6" style={{marginTop:20}}>
+                <h4>{obj.day} {obj.time}</h4>
+                <Button size="lg" block outline color={this.getColor(obj.visitor)} onClick={this.pickAway}>{visitor}</Button>
+                <Button size="lg" block outline color={this.getColor(obj.home)} onClick={this.pickHome} style={{marginTop:10}}>{home}</Button>
             </div>
     );
   }

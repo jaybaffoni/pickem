@@ -42,6 +42,18 @@ table th{
     margin-right: auto;
 }
 
+.pick-text{
+    color: white;
+    font-size: 20px;
+}
+
+.picked-text{
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
 .error-text{
     color: red;
 }
