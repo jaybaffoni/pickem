@@ -17,8 +17,6 @@ class Home extends Component {
             <div>
                 <h1 className="white-text">Rankings:</h1>
                 <LeagueRank />
-                <h1 className="white-text">Recent Scores:</h1>
-                <RecentScores />
             </div>
     );
   }
