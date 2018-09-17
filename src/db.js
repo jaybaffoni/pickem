@@ -1,3 +1,3 @@
 export const DB_INFO = {
-    address: 'https://dfabda15.ngrok.io'
+    address: 'http://98.110.235.159:5000/'
 }
